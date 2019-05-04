@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background: #ededed;
+}
+
+body{
+  background-color: #ededed;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  font-size: 24px;
+  padding: 24px;
+  text-align:center;
+  font-weight: bold;
+  color: white;
+  background: #019963;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(115deg, #2f77 0%, #276358 130%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+p {
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
+}
+
+.container {
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width:100%;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width:100%;
+  }
+}
+
+.card:nth-child(2n) h1 {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.card:nth-child(4n) h1 {
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.card:nth-child(5n) h1 {
+  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
+
+ .login-form-1 {
+  max-width: 300px;
+  /* border-radius: 5px; */
+  display: inline-block;
+}
+.main-login-form {
+  position: relative;
+}
+.login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  border-radius: 0;
+  background: transparent;
+  color: #555555;
+  padding: 7px 0;
+  font-weight: bold;
+  height:auto;
+}
+.login-form-1 .form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 2px solid #efefef;
+  padding-right: 20px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.login-group-checkbox {
+  padding: 5px 0;
+}
+
+.row {
+    position: relative;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 60%;    login page is bigger but more responsive*/
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ #builder {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+ }
+/* The Close Button */
+.close {
+
+	position: absolute;
+    right: 25px;
+    top: 0;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-success {
+  background-color:#276358;
+  border: white;
+  border-left-width: 20px;
+  border-style: solid;
+  border-right-width: 20px;
+}
+
+.logoutButtonClass{
+  background-color: #7ed3a7;
+  color: white;
+  padding: 2px;
+  text-align: center;
+
+}
+
+#loggedInDiv{
+  float:right;
+  text-align: center;
+  font-size: 16px
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+.form-inline {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.searchBar {
+	margin-left: 25px;
+    margin-right: 25px;
+	width: auto;
+}
+
+.scrollbar {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    float: left;
+    height: 400px;
+    width: auto;
+    background: #fff;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.force-overflow {
+}
+
+#searchText{
+  padding: 0px !important;
+  margin: 0px;
+  width: 500px;
+  height: 50px;
+  font-size: 14pt;
+}
+#deleteButton{
+  background: #c96464;
+  float: center;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
